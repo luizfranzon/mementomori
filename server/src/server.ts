@@ -1,5 +1,8 @@
+import { PrismaClient } from '@prisma/client'
 import express from "express"
 import dayjs from "dayjs"
+
+const prisma = new PrismaClient()
 
 require('dotenv').config()
 const refreshTimePassword = process.env.password
